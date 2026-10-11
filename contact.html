@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · AutoCharracter MV's</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">Contact</p>
+      <h2>Maverick's HQ7</h2>
+      <p>Separate from About. This page is only for notes and credit.</p>
+    </section>
+    <section class="section">
+      <form id="contact-form" class="prose">
+        <p>
+          <label>Name<br><input class="field" name="name" required style="width:100%"></label>
+        </p>
+        <p>
+          <label>Email<br><input class="field" name="email" type="email" required style="width:100%"></label>
+        </p>
+        <p>
+          <label>Note<br><textarea class="field" name="note" required></textarea></label>
+        </p>
+        <button class="btn invert" type="submit">Store locally</button>
+        <p id="contact-status" class="status"></p>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="js/pages.js"></script>
+</body>
+</html>

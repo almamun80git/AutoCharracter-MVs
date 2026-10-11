@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · AutoCharracter MV's</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">About</p>
+      <h2>A plain-text frontend for character hunting.</h2>
+    </section>
+    <section class="section prose">
+      <p><strong>AutoCharracter MV's</strong> is a static site by Maverick's HQ7. It does not train or ship an AI model. Chat calls an online HTTP API. Search calls AniList and MangaDex, then remembers queries in your browser database.</p>
+      <h3>What we will not do</h3>
+      <p>We will not scrape and re-host Hitomi, OmegaScans, or doujinshi galleries. Those remain source links after age confirmation. We will not serve sexual content of minors.</p>
+      <h3>Stack</h3>
+      <p>HTML, CSS, and native ES modules. IndexedDB for local retrieval. No build step, no Node required. Serve the folder with <span class="mono">python -m http.server 8080</span> so browser modules and APIs work.</p>
+    </section>
+  </main>
+  <script type="module" src="js/pages.js"></script>
+</body>
+</html>

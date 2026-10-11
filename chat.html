@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat · AutoCharracter MV's</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="chat">
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">AI Chat</p>
+      <h2>Answers from the internet, not a local model.</h2>
+      <p>Default: Pollinations text API. Optional: Groq or OpenRouter with your own key. This page is only a frontend.</p>
+    </section>
+    <section class="section">
+      <div id="chat-log" class="chat-log" aria-live="polite"></div>
+      <form id="chat-form">
+        <div class="toolbar">
+          <select class="field" name="provider">
+            <option value="pollinations">Pollinations (no key)</option>
+            <option value="groq">Groq (API key)</option>
+            <option value="openrouter">OpenRouter (API key)</option>
+          </select>
+          <input class="field" name="key" type="password" placeholder="API key if required" autocomplete="off">
+        </div>
+        <div class="chat-form">
+          <textarea class="field" name="prompt" placeholder="Ask about a character, series, or catalog query…" required></textarea>
+          <button class="btn invert" type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="js/pages.js"></script>
+</body>
+</html>

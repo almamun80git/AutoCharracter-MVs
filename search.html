@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search · AutoCharracter MV's</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="search">
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">Search</p>
+      <h2>Query the public databases.</h2>
+      <p>AniList + MangaDex return JSON in-page. Hitomi / MangaBaka / OmegaScans / Doujinshi are linked as catalog searches because they are not CORS-open databases.</p>
+    </section>
+    <section class="section">
+      <form id="search-form" class="toolbar">
+        <input class="field" name="q" placeholder="character, title, tag…" required>
+        <button class="btn invert" type="submit">Search</button>
+        <button class="btn" type="button" id="nsfw-toggle">NSFW off</button>
+      </form>
+      <p class="status">Recent (IndexedDB)</p>
+      <div id="recent" class="chips"></div>
+      <div id="results"></div>
+    </section>
+  </main>
+  <script type="module" src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features · AutoCharracter MV's</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="features">
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">Features</p>
+      <h2>What this frontend does.</h2>
+      <p>No on-device model. No scraped mirror of Hitomi. Official JSON where it exists; outbound catalog search where CORS blocks a live feed.</p>
+    </section>
+    <ul class="feature-list">
+      <li><strong>Age gate</strong><span>First visit confirms 18+. Adult catalog links stay off until you enable NSFW on Search.</span></li>
+      <li><strong>Live search</strong><span>AniList GraphQL and MangaDex REST run in the browser. Results cache in IndexedDB.</span></li>
+      <li><strong>Catalogs</strong><span>MangaBaka, Hitomi.la, OmegaScans, and Doujinshi.org open as source search pages. Those hosts do not offer a public CORS API we can legally re-host.</span></li>
+      <li><strong>AI chat</strong><span>Default path is Pollinations (open web). Optional Groq or OpenRouter if you paste a key — stored only in the request, not on our server.</span></li>
+      <li><strong>Library</strong><span>Named adult/SFW female characters with AniList portraits (color). UI chrome stays black and white.</span></li>
+      <li><strong>Hall of Fame</strong><span>Fixed all-time list you specified, including Madam President (Mari Kurihara) and Rias Gremory.</span></li>
+    </ul>
+  </main>
+  <script type="module" src="js/pages.js"></script>
+</body>
+</html>
